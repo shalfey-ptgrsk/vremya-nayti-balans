@@ -228,3 +228,17 @@ button.copy:hover{background:rgba(91,77,132,.46);transform:translateY(-2px);box-
 .program-invitation{font-size:clamp(19px,2vw,26px);text-align:center;line-height:1.7;margin:36px 0 0;color:#35594c}
 @media(max-width:760px){.program-details{grid-template-columns:1fr;gap:16px}.program-detail{min-height:0;padding:26px 18px;gap:10px}.program-detail strong{font-size:34px}.program-invitation br{display:none}}
 
+
+/* Client review: legible text against photography, retaining sage/lavender tones. */
+em,.dot,.pillar-word-space h3 span{color:#514164}
+.hero-copy{background:linear-gradient(110deg,rgba(250,249,245,.97),rgba(250,249,245,.92));text-shadow:none;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.signup{background:rgba(250,249,245,.96);text-shadow:none}
+.program-refined{background:rgba(232,237,229,.95)}
+header nav a,.button{background:rgba(37,75,55,.82);text-shadow:none}
+header nav a:nth-child(even),button.copy{background:rgba(77,60,103,.82);text-shadow:none}
+header nav a:hover,.button:hover{background:rgba(37,75,55,.94)}
+header nav a:nth-child(even):hover,button.copy:hover{background:rgba(77,60,103,.94)}
+@media(max-width:760px){.hero-copy{background:rgba(250,249,245,.95)}.signup{background:rgba(250,249,245,.97)}}
+.page-landscape{background-image:url("../public/balance-ravine.png");background-position:center;background-size:cover}
+@media(max-width:760px){.page-landscape{background-position:78% center}}
+.about>*{min-width:0;overflow-wrap:anywhere}
