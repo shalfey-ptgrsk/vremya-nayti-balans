@@ -259,3 +259,4 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .pillars-list h3 span{color:#514164}
 @media(max-width:760px){.pillars-caption{font-size:30px}.pillars-list .pillar-number{flex-basis:42px;width:42px;height:42px;font-size:18px}.pillars-list li{gap:14px}}
 .program-closing{text-align:center;margin:48px 0 24px}
+.team-group-photo{width:100%;max-width:1000px;margin:30px auto 36px;border-radius:24px;overflow:hidden;box-shadow:0 12px 36px rgba(41,62,53,.12)}.team-group-photo img{display:block;width:100%;height:auto}@media(max-width:760px){.team-group-photo{margin:24px auto;border-radius:16px}}
