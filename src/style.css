@@ -251,3 +251,10 @@ header nav a:hover,a.button:hover{background:rgba(37,75,55,.42)}
 header nav a:nth-child(even):hover,button.copy:hover{background:rgba(77,60,103,.4)}
 .hero-copy .date{font-weight:700}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+
+/* Strong, readable labels for the five supports. */
+.pillars-compact{background:rgba(244,241,248,.96)}
+.pillars-caption{display:inline-block;margin:4px 0 22px;padding:7px 24px;border-radius:999px;background:#fff;color:#3e3158;border:1px solid #c7bdd5;font-family:"Caveat",cursive;font-size:32px;font-weight:700;line-height:1.25;letter-spacing:0;text-transform:none;box-shadow:0 3px 14px rgba(62,49,88,.08)}
+.pillars-list .pillar-number{display:inline-flex;align-items:center;justify-content:center;flex:0 0 50px;width:50px;height:50px;border-radius:50%;background:#fff;border:1px solid #c7bdd5;color:#3e3158;font-family:Arial,sans-serif;font-size:20px;font-weight:700;letter-spacing:0;opacity:1}
+.pillars-list h3 span{color:#514164}
+@media(max-width:760px){.pillars-caption{font-size:30px}.pillars-list .pillar-number{flex-basis:42px;width:42px;height:42px;font-size:18px}.pillars-list li{gap:14px}}
