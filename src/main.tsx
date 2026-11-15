@@ -31,7 +31,7 @@ export function App(){
    {[
     ['Первая встреча','21 ноября','Суббота · 16:30'],
     ['Полный цикл','8 занятий','Два раза в неделю'],
-    ['Небольшая группа','8 человек','']
+    ['Группа','8 человек','']
    ].map(([label,value,detail],i)=><motion.div {...reveal} transition={{...reveal.transition,delay:i*.08}} className="program-detail" key={label}>
     <span className="program-label">{label}</span><strong>{value}</strong>{detail&&<span className="program-detail-note">{detail}</span>}
    </motion.div>)}
@@ -43,6 +43,7 @@ export function App(){
  </main><footer><span>Шалфей-Пятигорск</span><a href="#home">К началу ↑</a></footer></MotionConfig>
 }
 createRoot(document.getElementById('root')!).render(<App/>);
+
 
 
 
