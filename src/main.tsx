@@ -36,12 +36,14 @@ export function App(){
     <span className="program-label">{label}</span><strong>{value}</strong>{detail&&<span className="program-detail-note">{detail}</span>}
    </motion.div>)}
   </div>
+  <motion.h2 {...reveal} className="program-closing">Найдите время<br/><em>найти баланс.</em></motion.h2>
   <motion.p {...reveal} className="program-invitation">Сообщить запрос, уточнить детали<br/>и записаться можно по телефону.</motion.p>
  </section>
- <section id="signup" className="section signup"><motion.p {...reveal} className="eyebrow">Ваш следующий шаг</motion.p><motion.h2 {...reveal}>Найдите время<br/><em>найти баланс.</em></motion.h2><a className="phone" href="tel:+79187423820">+7 918 742-38-20 ↗</a><div className="flex flex-wrap justify-center gap-4"><a className="button" href="tel:+79187423820">Позвонить и записаться</a><button className="copy" onClick={copy}>Скопировать номер</button></div><motion.p {...reveal} role="status">{copied}</motion.p></section>
+ <section id="signup" className="section signup" aria-label="Запись на мероприятие"><a className="phone" href="tel:+79187423820">+7 918 742-38-20 ↗</a><div className="flex flex-wrap justify-center gap-4"><a className="button" href="tel:+79187423820">Позвонить и записаться</a><button className="copy" onClick={copy}>Скопировать номер</button></div><motion.p {...reveal} role="status">{copied}</motion.p></section>
  </main><footer><span>Шалфей-Пятигорск</span><a href="#home">К началу ↑</a></footer></MotionConfig>
 }
 createRoot(document.getElementById('root')!).render(<App/>);
+
 
 
 

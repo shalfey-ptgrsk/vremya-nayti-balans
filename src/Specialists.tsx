@@ -10,7 +10,7 @@ export function Specialists(){
  };
  return <section id="team" className="section specialists-section" aria-labelledby="team-title">
   <p className="eyebrow">03 / Специалисты</p>
-  <h2 id="team-title">Вместе —<br/><em>в равновесии.</em></h2>
+  <h2 id="team-title">Вместе<br/><em>и внимательно.</em></h2>
   <p className="team-intro">В блестящем взаимодействии и разнообразии применяемых методик группу курирует Содружество профильных специалистов Шалфей-Пятигорск.</p>
   <div className="specialist-profiles specialist-pages">
    {specialistProfiles.map((person,i)=><motion.article key={person.id} id={"specialist-"+person.id} className="specialist-profile specialist-page" aria-labelledby={'name-'+person.id}
@@ -31,5 +31,6 @@ export function Specialists(){
   </div>
  </section>;
 }
+
 
 
