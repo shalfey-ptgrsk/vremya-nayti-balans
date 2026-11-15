@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@font-face{font-family:"Caveat";src:url("../public/fonts/Caveat.ttf") format("truetype");font-weight:400 700;font-style:normal;font-display:swap}
 :root{font-family:Arial,sans-serif;color:#293e35;background:#faf9f5;font-synthesis:none}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}a:focus-visible,button:focus-visible{outline:3px solid #7866a0;outline-offset:5px}header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 5vw;border-bottom:1px solid #d9ded6;background:#faf9f5;position:sticky;top:0;z-index:10}.brand{font-family:Georgia,serif;font-size:27px}.brand span{display:block;font:10px Arial;letter-spacing:3px;text-transform:uppercase}nav{display:flex;gap:26px;font-size:13px}.small-link{font-size:13px;border-bottom:1px solid;padding-bottom:5px}.hero{max-width:1500px;margin:auto;display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:5vw;padding:70px 6vw}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:11px;line-height:1.8}h1,h2,h3{font-family:Georgia,serif;font-weight:400}h1{font-size:clamp(60px,7.7vw,120px);line-height:1.02;letter-spacing:-4px;margin:26px 0}em{font-weight:400;color:#7c7298}.dot{color:#7c7298}.intro{font-size:19px;line-height:1.6;margin-bottom:30px}.button{display:inline-block;border-radius:40px;background:#35594c;color:white;padding:18px 25px;font-size:14px}.date{font-size:13px;letter-spacing:1px;margin-top:36px}.hero-art{padding:20px;background:#eeedf1;border-radius:48% 48% 8px 8px}.emblem{display:block;width:100%;height:auto;object-fit:contain}.art-caption{display:flex;justify-content:space-between;font:italic 15px Georgia;padding:24px 0 6px;gap:12px}.facts{display:flex;justify-content:space-around;padding:30px 6vw;background:#e8ede5;gap:20px}.facts span{display:flex;align-items:center;gap:16px;font-size:14px}.facts b{font:40px Georgia}.section{max-width:1500px;padding:90px 6vw;margin:auto}h2{font-size:clamp(36px,4vw,60px);line-height:1.14;letter-spacing:-1.5px;margin:22px 0 30px}p{line-height:1.8}.about{display:grid;grid-template-columns:1fr 2fr;gap:60px}.about p:not(.eyebrow){max-width:760px;font-size:17px}.pillars{background:#efedf3}.pillar-buttons{display:grid;grid-template-columns:repeat(5,1fr);margin-top:45px;gap:10px}.pillar-buttons button{display:flex;justify-content:space-between;gap:8px;padding:22px 12px;border:1px solid #a9a1b8;background:transparent;border-radius:4px;font-size:15px}.pillar-buttons button span{font-size:11px}.pillar-buttons button[aria-pressed=true]{background:#615575;color:white}.balance-display{text-align:center;padding:60px 0 5px}.balance-display h3{font-size:clamp(42px,6vw,80px);margin:15px}.balance-line{height:1px;width:70%;background:#8b809c;margin:30px auto}.team-intro{max-width:650px}.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:50px}.team-grid article{border-top:1px solid #bfcabd;padding:24px 0}.team-grid h3{font-size:28px;margin:15px 0}.team-grid p{font-size:15px}.program{background:#e8ede5;display:grid;grid-template-columns:1fr 1fr;gap:65px}.program-row{display:flex;justify-content:space-between;gap:20px;padding:24px 0;border-bottom:1px solid #b9c5b8}.program-row strong{font-weight:400;text-align:right}.signup{text-align:center}.phone{display:block;font-size:clamp(22px,4vw,44px);margin:35px 0}.copy{border:1px solid #738376;border-radius:40px;padding:15px 25px;background:transparent}.signup [role=status]{min-height:30px}footer{display:flex;justify-content:space-between;padding:30px 6vw;border-top:1px solid #d9ded6;font-size:13px}.skip{position:absolute;left:10px;top:-100px}.skip:focus{top:10px;z-index:100;background:white;padding:15px}@media(min-width:1800px){body{font-size:20px}}@media(max-width:760px){header{flex-wrap:wrap;padding:15px 5vw;gap:16px}nav{order:3;width:100%;justify-content:space-between;gap:8px;font-size:11px}.hero{grid-template-columns:1fr;padding:40px 6vw;gap:30px}h1{letter-spacing:-2px}.hero-art{max-width:420px;margin:auto}.section{padding:60px 6vw}.about,.program{grid-template-columns:1fr;gap:15px}.facts{gap:10px;padding:22px 5vw}.facts span{flex-direction:column;gap:6px;text-align:center;font-size:11px}.facts b{font-size:32px}.pillar-buttons{grid-template-columns:1fr}.team-grid{grid-template-columns:1fr}.balance-display{padding-top:35px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 
 /* Original emblem, displayed whole in the upper-left corner. */
@@ -133,27 +134,27 @@ header nav a:nth-child(even):hover{background:rgba(91,77,132,.46)}
 
 
 /* Handwritten Cyrillic navigation labels. */
-header nav a{font-family:"Segoe Script","Monotype Corsiva","URW Chancery L",cursive;font-size:20px;font-weight:700;font-style:normal;letter-spacing:0;line-height:1.4}
+header nav a{font-family:"Caveat",cursive;font-size:20px;font-weight:700;font-style:normal;letter-spacing:0;line-height:1.4}
 @media(max-width:760px){header nav a{font-size:18px}}
 
 
 /* Match the introductory phrase to the handwritten navigation. */
-.hero-copy .intro{font-family:"Segoe Script","Monotype Corsiva","URW Chancery L",cursive;font-size:clamp(21px,2.2vw,30px);font-weight:700;font-style:normal;line-height:1.65;letter-spacing:0}
+.hero-copy .intro{font-family:"Caveat",cursive;font-size:clamp(21px,2.2vw,30px);font-weight:700;font-style:normal;line-height:1.65;letter-spacing:0}
 
 
 /* Consistent handwritten headings across sections and cards. */
-h1,h2,h3,.pillars-heading h2,.pillar-word-space h3,.pillars-list h3{font-family:"Segoe Script","Monotype Corsiva","URW Chancery L",cursive;font-weight:700;font-style:normal;letter-spacing:0;line-height:1.35}
+h1,h2,h3,.pillars-heading h2,.pillar-word-space h3,.pillars-list h3{font-family:"Caveat",cursive;font-weight:700;font-style:normal;letter-spacing:0;line-height:1.35}
 h1 em,h2 em,h3 em{font-family:inherit;font-weight:inherit;font-style:normal}
 
 
 /* Booking buttons share the translucent handwritten navigation style. */
-a.button{background:rgba(36,77,59,.32);color:#fff;border:1px solid rgba(255,255,255,.55);border-radius:999px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 4px 18px rgba(42,58,48,.06);font-family:"Segoe Script","Monotype Corsiva","URW Chancery L",cursive;font-size:20px;font-weight:700;font-style:normal;line-height:1.4;letter-spacing:0;text-shadow:0 1px 4px rgba(25,43,34,.5);text-align:center;transition:background .3s,transform .3s,box-shadow .3s}
+a.button{background:rgba(36,77,59,.32);color:#fff;border:1px solid rgba(255,255,255,.55);border-radius:999px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 4px 18px rgba(42,58,48,.06);font-family:"Caveat",cursive;font-size:20px;font-weight:700;font-style:normal;line-height:1.4;letter-spacing:0;text-shadow:0 1px 4px rgba(25,43,34,.5);text-align:center;transition:background .3s,transform .3s,box-shadow .3s}
 a.button:hover{background:rgba(36,77,59,.48);transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 8px 22px rgba(42,58,48,.12)}
 @media(max-width:760px){a.button{font-size:18px}}
 
 
 /* Prominent event date in the shared handwritten style. */
-.hero-copy .date{font-family:"Segoe Script","Monotype Corsiva","URW Chancery L",cursive;font-size:clamp(24px,2.8vw,38px);font-weight:900;font-style:normal;line-height:1.5;letter-spacing:0;color:#173e2c;text-shadow:0 1px 4px rgba(255,255,255,.85);margin-top:32px;max-width:100%;overflow-wrap:break-word}
+.hero-copy .date{font-family:"Caveat",cursive;font-size:clamp(24px,2.8vw,38px);font-weight:900;font-style:normal;line-height:1.5;letter-spacing:0;color:#173e2c;text-shadow:0 1px 4px rgba(255,255,255,.85);margin-top:32px;max-width:100%;overflow-wrap:break-word}
 
 
 /* Individual specialist stories in the natural scroll flow. */
@@ -210,7 +211,7 @@ a.button:hover{background:rgba(36,77,59,.48);transform:translateY(-2px);box-shad
 
 
 /* Copy-number action matches the shared handwritten glass buttons. */
-button.copy{background:rgba(91,77,132,.3);color:#fff;border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:18px 25px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 4px 18px rgba(42,58,48,.06);font-family:"Segoe Script","Monotype Corsiva","URW Chancery L",cursive;font-size:20px;font-weight:700;font-style:normal;line-height:1.4;letter-spacing:0;text-shadow:0 1px 4px rgba(25,43,34,.5);transition:background .3s,transform .3s,box-shadow .3s}
+button.copy{background:rgba(91,77,132,.3);color:#fff;border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:18px 25px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 4px 18px rgba(42,58,48,.06);font-family:"Caveat",cursive;font-size:20px;font-weight:700;font-style:normal;line-height:1.4;letter-spacing:0;text-shadow:0 1px 4px rgba(25,43,34,.5);transition:background .3s,transform .3s,box-shadow .3s}
 button.copy:hover{background:rgba(91,77,132,.46);transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 8px 22px rgba(42,58,48,.12)}
 @media(max-width:760px){button.copy{font-size:18px}}
 
@@ -221,7 +222,7 @@ button.copy:hover{background:rgba(91,77,132,.46);transform:translateY(-2px);box-
 .program-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 .program-detail{display:flex;flex-direction:column;justify-content:center;gap:14px;min-height:230px;padding:32px 24px;border-radius:26px;border:1px solid rgba(255,255,255,.65);background:linear-gradient(140deg,rgba(255,255,255,.42),rgba(222,232,218,.24));backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px rgba(53,89,76,.04);text-align:center}
 .program-detail:nth-child(2){background:linear-gradient(140deg,rgba(242,236,249,.48),rgba(220,211,237,.22))}
-.program-label,.program-detail strong,.program-detail-note,.program-invitation{font-family:"Segoe Script","Monotype Corsiva","URW Chancery L",cursive;font-weight:700;font-style:normal;letter-spacing:0}
+.program-label,.program-detail strong,.program-detail-note,.program-invitation{font-family:"Caveat",cursive;font-weight:700;font-style:normal;letter-spacing:0}
 .program-label{font-size:19px;color:#64557f;line-height:1.5}
 .program-detail strong{font-size:clamp(28px,3.1vw,44px);line-height:1.4;color:#234f3b}
 .program-detail-note{font-size:clamp(17px,1.7vw,23px);color:#315d49;line-height:1.6}
@@ -242,3 +243,11 @@ header nav a:nth-child(even):hover,button.copy:hover{background:rgba(77,60,103,.
 .page-landscape{background-image:url("../public/balance-ravine.png");background-position:center;background-size:cover}
 @media(max-width:760px){.page-landscape{background-position:78% center}}
 .about>*{min-width:0;overflow-wrap:anywhere}
+
+/* Shared translucent controls and bundled Cyrillic script on every platform. */
+header nav a,a.button{background:rgba(37,75,55,.28);color:#fff;text-shadow:0 1px 2px #183627,0 0 5px rgba(24,54,39,.75);border-color:rgba(255,255,255,.65)}
+header nav a:nth-child(even),button.copy{background:rgba(77,60,103,.26);color:#fff;text-shadow:0 1px 2px #352544,0 0 5px rgba(53,37,68,.75);border-color:rgba(255,255,255,.65)}
+header nav a:hover,a.button:hover{background:rgba(37,75,55,.42)}
+header nav a:nth-child(even):hover,button.copy:hover{background:rgba(77,60,103,.4)}
+.hero-copy .date{font-weight:700}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
