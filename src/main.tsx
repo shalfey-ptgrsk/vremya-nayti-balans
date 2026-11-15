@@ -37,12 +37,13 @@ export function App(){
    </motion.div>)}
   </div>
   <motion.h2 {...reveal} className="program-closing">Найдите время<br/><em>найти баланс.</em></motion.h2>
-  <motion.p {...reveal} className="program-invitation">Сообщить запрос, уточнить детали<br/>и записаться можно по телефону.</motion.p>
+  
  </section>
- <section id="signup" className="section signup" aria-label="Запись на мероприятие"><a className="phone" href="tel:+79187423820">+7 918 742-38-20 ↗</a><div className="flex flex-wrap justify-center gap-4"><a className="button" href="tel:+79187423820">Позвонить и записаться</a><button className="copy" onClick={copy}>Скопировать номер</button></div><motion.p {...reveal} role="status">{copied}</motion.p></section>
+ <section id="signup" className="section signup" aria-label="Запись на мероприятие"><motion.p {...reveal} className="program-invitation">Сообщить запрос, уточнить детали<br/>и записаться можно по телефону.</motion.p><a className="phone" href="tel:+79187423820">+7 918 742-38-20 ↗</a><div className="flex flex-wrap justify-center gap-4"><a className="button" href="tel:+79187423820">Позвонить и записаться</a><button className="copy" onClick={copy}>Скопировать номер</button></div><motion.p {...reveal} role="status">{copied}</motion.p></section>
  </main><footer><span>Шалфей-Пятигорск</span><a href="#home">К началу ↑</a></footer></MotionConfig>
 }
 createRoot(document.getElementById('root')!).render(<App/>);
+
 
 
 
